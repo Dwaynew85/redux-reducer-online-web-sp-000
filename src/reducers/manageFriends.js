@@ -3,7 +3,11 @@ export function manageFriends(state, action){
     case 'ADD_FRIEND':
       return {
         ...state,
-        friend: action.friend
+        {
+          name: action.friend.name
+          hometown: action.friend.hometown
+          id: action.friend.id
+        }
       }
       break;
     default:
