@@ -7,6 +7,6 @@ export function manageFriends(state, action){
       }
       break;
     default:
-      
+
   }
 }
